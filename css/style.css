@@ -1,0 +1,684 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+iframe,
+video,
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #131E15;
+}
+
+
+
+body {
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 16px;
+    line-height: 26px;
+    color: #131E15;
+    min-width: 1450px;
+    background-color: #131E15;
+}
+
+#top {
+    background: -moz-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96b29b', endColorstr='#0096b29b', GradientType=0);
+    /* IE6-9 */
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+}
+
+#top_inner {
+    display: flex;
+    justify-content: right;
+    padding-right: 120px;
+}
+
+.top_inner_img {
+    padding: 20px 20px;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Abhaya Libre';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.h_menu {
+    width: 200px;
+    text-align: center;
+}
+
+.h_menu:hover {
+
+    background: url(../images/header/header_hover.png) no-repeat center;
+}
+
+#video_banner {
+    background-color: #000;
+    padding: 120px 0;
+}
+
+.video_b_inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.recommendation_inner {
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Abhaya Libre';
+    font-size: 21px;
+    line-height: 31px;
+}
+
+.recommendation_inner ul.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab_content {
+    position: relative;
+}
+
+.area1 {
+    position: absolute;
+    bottom: 50px;
+    left: 650px;
+    width: 250px;
+    height: 250px;
+}
+
+.area1~p {
+    position: absolute;
+    left: 750px;
+    bottom: 90px;
+    opacity: 0;
+}
+
+.area1:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+.area2 {
+    position: absolute;
+    bottom: 80px;
+    left: 230px;
+    width: 400px;
+    height: 300px;
+
+}
+
+.area2~p {
+    position: absolute;
+    left: 270px;
+    top: 500px;
+    opacity: 0;
+
+}
+
+.area2:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+/*오파시티 부분은 위치 다 잡고 나서 살릴것!*/
+
+.area3 {
+    position: absolute;
+    bottom: 80px;
+    left: 350px;
+    width: 350px;
+    height: 200px;
+}
+
+.area3~p {
+    position: absolute;
+    left: 150px;
+    top: 520px;
+    opacity: 0;
+}
+
+.area3:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.area4 {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    width: 350px;
+    height: 200px;
+}
+
+.area4~p {
+    position: absolute;
+    left: 500px;
+    top: 180px;
+    opacity: 0;
+}
+
+.area4:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.area5 {
+    position: absolute;
+    top: 510px;
+    right: 90px;
+    width: 350px;
+    height: 200px;
+}
+
+.area5~p {
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    opacity: 0;
+}
+
+.area5:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+.area6 {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width: 600px;
+    height: 400px;
+}
+
+.area6~p {
+    position: absolute;
+    left: 410px;
+    top: 420px;
+    opacity: 0;
+}
+
+.area6:hover~p {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.recommendation_inner ul.tabs li {
+    background: url(../images/ceia_recommendation/direct_menu.png) no-repeat center;
+    width: 245px;
+    text-align: center;
+}
+
+.recommendation_inner h1 {
+    text-align: center;
+    padding: 120px 0 45px;
+}
+
+
+
+
+
+#new_arrival {
+    padding: 150px 0;
+}
+
+.new_1 {
+    width: 32%;
+}
+
+.new_2 {
+    width: 68%;
+}
+
+#new_arrival {
+    padding-bottom: 70px;
+    display: flex;
+}
+
+.new_arrival_inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.swiper1 {
+    width: 550px;
+    height: 745px;
+    background: url(../images/new_arrival/new_forest_concept_bg.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new_title,
+.new_text {
+    color: #eeeccc;
+    font-family: 'Abhaya Libre';
+    width: 550px;
+    margin-left: auto;
+}
+
+.new_title {
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.new_text {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.mySwiper {
+    width: 371px;
+    height: 500px;
+    /*이미지와 같은 크기로 설정*/
+}
+
+.mySwiper2 {
+    height: 450px;
+}
+
+.swiper2 {
+    background: url(../images/new_arrival/new_forest_product_bg.png) repeat-x center;
+    height: 570px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.swiper-slide {
+    background: url(../images/new_arrival/product_bg.png) no-repeat center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.font_style1 {
+    display: block;
+    font-size: 20px;
+    color: #eeeccc;
+    font-family: 'Abhaya Libre';
+    text-align: center;
+}
+
+.font_style2 {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+#moving_banner {
+    background: url(../images/moving_banner/moiving_banner_bg.png) no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+@keyframes marquee {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -1800px;
+    }
+}
+
+#moving_banner .t_group1 {
+    width: 3600px;
+    display: flex;
+    animation: marquee 10s linear infinite reverse;
+    margin-bottom: 50px;
+}
+
+#moving_banner .t_group1 p {
+    display: flex;
+    width: 1800px;
+    justify-content: space-around;
+}
+
+#moving_banner .t_group2 {
+    width: 3600px;
+    display: flex;
+    animation: marquee 8s linear infinite reverse;
+}
+
+#moving_banner .t_group2 p {
+    display: flex;
+    width: 1800px;
+    justify-content: space-around;
+}
+
+
+
+
+#brand_info {
+    background: url(../images/brand_info/bg.png) no-repeat center;
+    width: 100%;
+    height: 3502px;
+}
+
+.brand_info_inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.info_brand_logo,
+.r_logo {
+    text-align: center;
+}
+
+.info_brand_logo {
+    padding-top: 105px
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    /*처음 동작, 한 가지 이상의 속성이 들어갈 수 있음.*/
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.r_logo {
+    position: absolute;
+    top: 0;
+    left: 530px;
+    padding-top: 50px;
+}
+
+.r_logo img {
+    animation: rotate 7s linear infinite;
+}
+
+.brand_info_title {
+    font-size: 80px;
+    line-height: 90px;
+    font-family: 'Abhaya Libre';
+    padding: 100px 0 120px;
+    text-align: center;
+}
+
+.designers li {
+    background: url(../images/brand_info/designer_plates_bg.png) no-repeat center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 230px;
+}
+
+.designers li.r_bg {
+    justify-content: right;
+    background: url(../images/brand_info/designer_plates_bg2.png) no-repeat center;
+}
+
+.designer_info {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.font_size1 {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 50px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.mySwiper3 {
+    width: 590px;
+    height: 700px;
+    /*이미지와 같은 크기로 설정*/
+}
+
+.brand_vision {
+    display: flex;
+    background-color: #cfdcd1;
+    width: 1300px;
+    height: 890px;
+    justify-content: space-around;
+    padding-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.t_vision h1 {
+    padding: 270px 0 30px;
+    font-family: 'Abhaya Libre';
+    font-size: 60px;
+    line-height: 70px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.b_direct_menu {
+    display: block;
+    background: url(../images/brand_info/b_direct_menu.png) no-repeat center;
+    width: 235px;
+    height: 55px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #eeeccc;
+    box-sizing: border-box;
+    padding-top: 12px;
+    margin: auto;
+}
+
+.designers li.margin-bottom {
+    margin-bottom: 200px;
+}
+
+
+
+
+
+.pg_direct_menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.pg_direct_menu li {
+    width: 302px;
+    height: 183px;
+    background: url(../images/brand_info/pg_direct_menu_bg.png) no-repeat center;
+    position: relative;
+
+}
+
+.menu_name {
+    padding: 20px 0 0 25px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.d_btn a {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 49px;
+    bottom: 15px;
+    right: 25px;
+    text-align: center;
+    padding-top: 25px;
+    background: url(../images/brand_info/pg_direction_bg.png) no-repeat center;
+    font-weight: bold;
+}
+
+.img {
+    padding: 25px 0 0 40px;
+    opacity: 0;
+}
+
+.img_size1 {
+    padding-left: 65px;
+}
+
+.img_size2 {
+    padding-left: 55px;
+}
+
+.pg_direct_menu li:hover .img {
+    opacity: 1;
+    transition: 1s;
+}
+
+#event {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+#event ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+#event ol li {
+    position: relative;
+}
+
+#event h1 {
+    font-size: 60px;
+    line-height: 70px;
+    padding: 70px 0;
+    font-family: 'Abhaya Libre';
+    color: #eeeccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.e_hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    width: 445px;
+    height: 630px;
+    opacity: 0;
+}
+
+.e_hover a {
+    display: block;
+    padding-top: 300px;
+    color: #eeeccc;
+    text-decoration: underline #eeeccc 1px;
+}
+
+#event ol li:hover .e_hover {
+    opacity: 1;
+    background: url(../images/event/hover_bg.png) no-repeat center;
+}
+
+#footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background: url(../images/footer/footer_bg.png) no-repeat center;
+    height: 303px;
+}
+
+.footer_inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f_logo {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+
+.f_text {
+    text-align: center;
+}
+
+.footer_policy,
+.footer_info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_policy {
+    padding: 50px 0 40px;
+}
+
+.footer_info li {
+    padding: 0 30px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer_info li.border {
+    border-right: #131E15 1px solid;
+    border-left: #131E15 1px solid;
+}
+
+.address {
+    padding: 45px 0 5px;
+}
+
+.address,
+.copyright {
+    font-size: 14px;
+}
+
+.footer_policy li a {
+    display: inline;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    padding: 0 65px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    color: #194d23;
+}

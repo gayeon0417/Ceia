@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #131E15;
+}
+
+iframe,
+video,
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 16px;
+    line-height: 26px;
+    color: #131E15;
+    min-width: 1450px;
+    background-color: #131E15;
+}
+
+#top {
+    background: -moz-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96b29b', endColorstr='#0096b29b', GradientType=0);
+    /* IE6-9 */
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 3;
+}
+
+#top_inner {
+    display: flex;
+    justify-content: right;
+    padding-right: 120px;
+}
+
+.top_inner_img {
+    padding: 20px 20px;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Abhaya Libre';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.h_menu {
+    width: 200px;
+    text-align: center;
+}
+
+.h_menu:hover {
+
+    background: url(../images/header/header_hover.png) no-repeat center;
+}
+
+
+/*event 코드 시작*/
+#events {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+#video_banner {
+    text-align: center;
+}
+
+#video_banner video {
+    width: 100%;
+}
+
+/*얘는 1920에 1080인데 너비부분에 스크롤바가 생기는 건 세로 스크롤바 자리 때문일까요..?
+너비를 어떻게 줄여야 할까요?*/
+
+
+#moving_banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 300px;
+    padding: 50px 0;
+    border-top: 3px #eeeccc double;
+    border-bottom: 3px #eeeccc double;
+}
+
+
+
+@keyframes marquee {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -1920px;
+    }
+}
+
+#moving_banner .m_banner {
+    width: 100%;
+    display: flex;
+    animation: marquee 8s linear infinite reverse;
+}
+
+#moving_banner .m_banner img {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+
+
+
+.ongoing {
+    display: flex;
+}
+
+.upcomming {
+    display: flex;
+}
+
+.our_memory {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.event_title {
+    background: url(../images/sub_page2/event_title_bg.png) no-repeat center;
+    text-align: center;
+    font-family: 'Abhaya Libre';
+    font-size: 30px;
+    font-weight: bold;
+    height: 80px;
+    margin: 300px 0 100px;
+}
+
+.writing {
+    padding: 26px 0;
+}
+
+.ongoing li,
+.upcomming li,
+.our_memory li {
+    width: 30%;
+    padding: 0 30px;
+}
+
+li:hover img {
+    display: inline-block;
+    box-shadow: 0 0 20px #F9F8ED;
+}
+
+/*event 코드 끝*/
+
+#footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background: url(../images/footer/footer_bg.png) no-repeat center;
+    height: 303px;
+}
+
+.footer_inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f_logo {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+
+.f_text {
+    text-align: center;
+}
+
+.footer_policy,
+.footer_info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_policy {
+    padding: 50px 0 40px;
+}
+
+.footer_info li {
+    padding: 0 30px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer_info li.border {
+    border-right: #131E15 1px solid;
+    border-left: #131E15 1px solid;
+}
+
+.address {
+    padding: 45px 0 5px;
+}
+
+.address,
+.copyright {
+    font-size: 14px;
+}
+
+.footer_policy li a {
+    display: inline;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    padding: 0 65px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    color: #194d23;
+}

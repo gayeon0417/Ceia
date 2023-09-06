@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+iframe,
+video,
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #131E15;
+}
+
+body {
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 16px;
+    line-height: 26px;
+    color: #131E15;
+    min-width: 1450px;
+    background-color: #2a3938;
+    /* 어떤 기기에서든 1450px 크기로 보여준다는 의미! - 반응형이 아니니까~*/
+}
+
+#top {
+    background: -moz-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96b29b', endColorstr='#0096b29b', GradientType=0);
+    /* IE6-9 */
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#top_inner {
+    display: flex;
+    justify-content: right;
+    padding-right: 120px;
+}
+
+.top_inner_img {
+    padding: 20px 20px;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Abhaya Libre';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.h_menu {
+    width: 200px;
+    text-align: center;
+}
+
+.h_menu:hover {
+
+    background: url(../images/header/header_hover.png) no-repeat center;
+}
+
+.swiper1 {
+    padding-top: 250px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background: #96b29b;
+}
+
+.line_names {
+    display: flex;
+    justify-content: center;
+}
+
+.line_names li {
+    background: url(../images/sub_page/normal_line_direction.png) no-repeat center;
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Abhaya Libre';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 80px 10px;
+}
+
+.line_names li a {
+    display: block;
+    padding-top: 10px;
+    color: #131E15;
+}
+
+.line_names li:hover {
+    background: url(../images/sub_page/hover_line_direction.png) no-repeat center;
+}
+
+#products_deep_forest {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price {
+    text-align: center;
+}
+
+.products li {
+    position: relative;
+    margin: 50px 15px;
+}
+
+.position1 {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.position2 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.price {
+    font-family: 'Abhaya Libre';
+    padding-top: 10px;
+}
+
+.price a {
+    color: #f9f8ed;
+}
+
+.price a:hover {
+    text-decoration: underline 1px #f9f8ed;
+}
+
+.position3 {
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+
+.position4 {
+    position: absolute;
+    top: 100px;
+    left: 65px;
+}
+
+.position5 {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.position6 {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+.position7 {
+    position: absolute;
+    top: 125px;
+    left: 0;
+}
+
+/*노말 포지션*/
+
+.position8 {
+    position: absolute;
+    top: 145px;
+    left: 45px;
+}
+
+.position9 {
+    position: absolute;
+    top: 100px;
+    right: 15px;
+}
+
+.position10 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.position11 {
+    position: absolute;
+    top: 200px;
+    left: 15px;
+}
+
+.position12 {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+
+.position13 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.hover1 {
+    transform: scale(0.9, 0.9);
+}
+
+.hover1:hover {
+    transform: scale(1, 1);
+}
+
+#footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background: url(../images/footer/footer_bg.png) no-repeat center;
+    height: 303px;
+}
+
+.footer_inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f_logo {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+
+.f_text {
+    text-align: center;
+}
+
+.footer_policy,
+.footer_info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_policy {
+    padding: 50px 0 40px;
+}
+
+.footer_info li {
+    padding: 0 30px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer_info li.border {
+    border-right: #131E15 1px solid;
+    border-left: #131E15 1px solid;
+}
+
+.address {
+    padding: 45px 0 5px;
+}
+
+.address,
+.copyright {
+    font-size: 14px;
+}
+
+.footer_policy li a {
+    display: inline;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    padding: 0 65px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    color: #194d23;
+}

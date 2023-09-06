@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+iframe,
+video,
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #131e15;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 16px;
+    line-height: 26px;
+    color: #131E15;
+    min-width: 1450px;
+    background-color: #111211;
+}
+
+#top {
+    background: -moz-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(150, 178, 155, 1) 0%, rgba(150, 178, 155, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#96b29b', endColorstr='#0096b29b', GradientType=0);
+    /* IE6-9 */
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+}
+
+#top_inner {
+    display: flex;
+    justify-content: right;
+    padding-right: 120px;
+}
+
+.top_inner_img {
+    padding: 20px 20px;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Abhaya Libre';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.h_menu {
+    width: 200px;
+    text-align: center;
+}
+
+.h_menu:hover {
+
+    background: url(../images/header/header_hover.png) no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Brand Introduction Start*/
+
+#brand_appeal {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.plate_img {
+    padding: 300px 20px 200px;
+}
+
+.brief_text {
+    padding: 500px 20px 0;
+    text-align: center;
+}
+
+.brand_identity {
+    padding-top: 40px;
+    color: #f9f8ed;
+    text-align: center;
+    font-size: 23px;
+    line-height: 35px;
+}
+
+#designers {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.section_title {
+    background-color: #96b29b;
+    width: 240px;
+    color: #f9f8ed;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px 20px;
+    font-family: 'Abhaya Libre';
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.d_pic_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.names {
+    background-color: #f9f8ed;
+    text-align: center;
+    padding: 10px;
+    margin: 40px 0 60px;
+    border-radius: 20px;
+}
+
+.designers_text {
+    width: 1170px;
+    padding: 60px 0;
+    background: url(../images/sub_page4/designer_intro_bg.png) no-repeat top center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+#logo_guide {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+.logo_img {
+    width: 635px;
+    height: 712px;
+    background: url(../images/sub_page4/logo_bg.png) no-repeat top left;
+    position: relative;
+}
+
+.logo_img img {
+    display: inline-block;
+    padding: 120px 0 0 70px;
+    position: relative;
+}
+
+.flower {
+    width: 180px;
+    height: 180px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+}
+
+.indicator1 {
+    position: absolute;
+    top: 48px;
+    left: 150px;
+}
+
+.indicator3 {
+    position: absolute;
+    top: 170px;
+    left: 286px;
+}
+
+.indicator2 {
+    position: absolute;
+    bottom: 133px;
+    left: 243px;
+}
+
+.logo_guide_inner {
+    display: flex;
+}
+
+.logo_text li {
+    background-color: rgba(249, 248, 237, 0.8);
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.logo_text .f_textbox {
+    margin: 100px 20px 0;
+}
+
+.highlight {
+    background-color: #e9e965;
+    color: #131e15;
+}
+
+#video {
+    width: 1300px;
+    margin: 200px auto;
+}
+
+.section_title2 {
+    background-color: #96b29b;
+    width: 334px;
+    color: #f9f8ed;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px 20px;
+    font-family: 'Abhaya Libre';
+    text-align: center;
+    margin-bottom: 70px;
+    margin: 40px auto;
+}
+
+.donation_banner {
+    padding-bottom: 150px;
+}
+
+.donation_story_innner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.donation_story_innner p {
+    padding-bottom: 40px;
+    color: #f9f8ed;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.d_btn1 {
+    background: url(../images/sub_page4/ledger_bg.jpg) no-repeat center left;
+    height: 400px;
+    width: 800px;
+    margin-top: 200px;
+    text-align: left;
+}
+
+.d_btn1:hover {
+    background-size: 130%;
+}
+
+.d_btn1 a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #131e15;
+    font-weight: bold;
+}
+
+.d_btn1 a {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 280px;
+    color: #f9f8ed;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.d_btn2 {
+    background: url(../images/sub_page4/donation_institution_bg.jpg) no-repeat center right;
+    height: 400px;
+    margin: 100px 0;
+    text-align: right;
+}
+
+.d_btn2:hover {
+    background-size: 120%;
+}
+
+.d_btn2 a {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 280px;
+    color: #f9f8ed;
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.d_btn2 a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #131e15;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*Brand Introduction Finish*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background: url(../images/sub_page4/f_bg.png) no-repeat center;
+    height: 303px;
+}
+
+.footer_inner {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f_logo {
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+
+.f_text {
+    text-align: center;
+}
+
+.footer_policy,
+.footer_info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_policy {
+    padding: 50px 0 40px;
+}
+
+.footer_info li {
+    padding: 0 30px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.footer_info li.border {
+    border-right: #131E15 1px solid;
+    border-left: #131E15 1px solid;
+}
+
+.address {
+    padding: 45px 0 5px;
+}
+
+.address,
+.copyright {
+    font-size: 14px;
+}
+
+.footer_policy li a {
+    display: inline;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    padding: 0 65px;
+    font-family: 'Abhaya Libre';
+    font-weight: bold;
+    color: #005e20;
+}
