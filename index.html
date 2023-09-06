@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <link rel="shortcut icon" href="./images/favicon/Asset 7.png" type="image/x-icon">
+    <link rel="stylesheet" href="./fonts/English fonts/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Korean fonts/stylesheet.css">
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 제이쿼리-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //처음들어갔을때 모습 만들기...
+            $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+            $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+            $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+                $(".tab_content").hide(); //모든 contents들 숨김
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+                .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+                $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+                return false;
+            });
+
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ceia</title>
+</head>
+
+<body>
+    <div id="top">
+        <div id="top_inner">
+            <p class="top_inner_img"><a href="#"><img src="./images/header/(top)personal_info.png" alt="개인정보"></a></p>
+            <p class="top_inner_img"><a href="#"><img src="./images/header/(top)search.png" alt="개인정보"></a></p>
+            <p class="top_inner_img"><a href="#"><img src="./images/header/(top)wishlist.png" alt="개인정보"></a></p>
+        </div><!--top_inner-->
+        <div id="header">
+            <p class="h_menu"><a href="#">Brand Introduction</a></p>
+            <p class="h_menu"><a href="#">Product</a></p>
+            <p class="h_logo"><a href="#"><img src="./images/header/H_logo.png" alt="메인페이지 바로가기"></p></a>
+            <p class="h_menu"><a href="#">Event</a></p>
+            <p class="h_menu"><a href="#">Collaboration</a></p>
+        </div><!--herder-->
+    </div><!--top-->
+
+    <div id="video_banner">
+        <div class="video_b_inner">
+            <p><video src="./viedeo/video_banner.mp4" muted autoplay playsinline loop></video></p>
+        </div><!--video_b_inner-->
+    </div><!--video_banner-->
+
+
+    <div id="ceia_recommendation">
+        <div class="recommendation_inner">
+            <div id="wrapper">
+                <!--탭 콘텐츠 영역 -->
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <h1><img src="./images/ceia_recommendation/deep_forest.png" alt="recommendation1"></h1>
+                        <div class="indicator1">
+                            <span class="area1">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/indicator2.png" alt="recommendation2"></p>
+                        </div><!--indicator1-->
+                        <div class="indicator2">
+                            <span class="area2">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/indicator1.png" alt="recommendation3"></p>
+                        </div><!--indicator2-->
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <!--Content-->
+                        <h1><img src="./images/ceia_recommendation/under_the_olive_flower.png"
+                                alt="under_the_olive_flower"></h1>
+                        <div class="indicator1">
+                            <span class="area3">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/2_indicator1.png" alt="recommendation4"></p>
+                        </div><!--indicator1-->
+                        <div class="indicator2">
+                            <span class="area4">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/2_indicator2.png" alt="recommendation5"></p>
+                        </div><!--indicator2-->
+                    </div>
+                    <div id="tab3" class="tab_content">
+                        <!--Content-->
+                        <h1><img src="./images/ceia_recommendation/starry_night.png" alt="starry_night"></h1>
+                        <div class="indicator1">
+                            <span class="area5">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/3_indicator1.png" alt="recommendation6"></IMG></p>
+                        </div><!--indicator1-->
+                        <div class="indicator2">
+                            <span class="area6">
+                            </span>
+                            <p><img src="./images/ceia_recommendation/3_indicator2.png" alt="recommendation7"></p>
+                        </div><!--indicator2-->
+                    </div>
+                    <div id="tab4" class="tab_content">
+                        <!--Content-->
+                        <h1><img src="./images/ceia_recommendation/sempre_juntos.png" alt="sempre_juntos"></h1>
+                        <!--탭 메뉴 영역 -->
+                    </div>
+                    <ul class="tabs">
+                        <li><a href="#tab1">Deep Forest</a></li>
+                        <li><a href="#tab2">Under the olive flower</a></li>
+                        <li><a href="#tab3">Starry Night</a></li>
+                        <li><a href="#tab4">Sempre Juntos</a></li>
+                    </ul>
+                </div><!--tap_container-->
+            </div><!--wrapper-->
+        </div><!--recommendation_inner-->
+    </div><!--ceia_recommendation-->
+    <!--호버하면 가격 뜨게 하는 방법 질문:)!-->
+
+
+
+    <div id="new_arrival">
+        <div class="new_1">
+            <h1 class="new_title">
+                New Arrival
+            </h1>
+            <p class="new_text">
+                Look what we got for you!
+            </p>
+
+            <div class="new_arrival_inner">
+
+                <!--Swiper_concpets-->
+
+                <div class="swiper1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/new_arrival/new_forest_concept_img1.png"
+                                    alt="concept1"></div>
+                            <div class="swiper-slide"><img src="./images/new_arrival/new_forest_concept_img2.png"
+                                    alt="concept2"></div>
+                            <div class="swiper-slide"><img src="./images/new_arrival/new_forest_concept_img3.png"
+                                    alt="concept3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper", {
+                            spaceBetween: 0,
+                            centeredSlides: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            loop: true,
+                            speed: 2000,
+                        });
+                    </script>
+                </div><!--swiper1-->
+            </div><!--new_arrival_inner-->
+        </div><!--new_1-->
+
+
+        <!--Swiper_products-->
+
+
+        <div class="new_2">
+            <!--오른쪽 슬라이드-->
+            <div class="swiper2">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/new_arrival/product1.png" alt="product1">
+                            <p><a href="#" class="font_style1">Tree stem patterned plate<br>
+                                    L / White<br>
+                                    ￦ 28,000<br>
+                                    <span class="font_style2">와일드한 붓터치로 나무결을 표현한
+                                        <br>플레이트 시리즈</span>
+                                </a></p>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/new_arrival/product2.png" alt="product2">
+                            <p><a href="#" class="font_style1">Tree stem patterned plate<br>
+                                    L / Black<br>
+                                    ￦ 28,000<br>
+                                    <span class="font_style2">와일드한 붓터치로 나무결을 표현한
+                                        <br>플레이트 시리즈</span></a></p>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/new_arrival/product3.png" alt="product3">
+                            <p><a href="#" class="font_style1">Tree stem patterned plate<br>
+                                    L / White<br>
+                                    ￦ 23,000<br>
+                                    <span class="font_style2">숲을 위에서 내려다본 모습을 표현한
+                                        <br>보울 시리즈</span></a></p>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/new_arrival/product4.png" alt="product4">
+                            <p><a href="#" class="font_style1">Tree stem patterned plate<br>
+                                    L / Black<br>
+                                    ￦ 23,000<br>
+                                    <span class="font_style2">숲을 위에서 내려다본 모습을 표현한
+                                        <br>보울 시리즈</span></a></p>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/new_arrival/product5.png" alt="product5">
+                            <p><a href="#" class="font_style1">Simple black wooden cutlery<br>
+                                    ￦ 13,000<br>
+                                    <span class="font_style2">딥 포레스트 시리즈와 어울리는 심플하고<br>담백한 스타일의<br>블랙 우든 커틀러리
+                                        시리즈</span></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--new_2-->
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper2", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+        </div><!--swiper2-->
+    </div><!--new_arrival-->
+
+    <!--스와이퍼 잠시 보류하고 다른 작업 중 !-->
+    <!--스와이퍼 왜 세로 정렬이 안될까, 왜..?-->
+
+    <div id="moving_banner">
+        <div class="t_group1">
+            <p>
+                <img src="./images/moving_banner/line1.png" alt="line1">
+                <img src="./images/moving_banner/line3.png" alt="line3">
+            </p>
+            <p>
+                <img src="./images/moving_banner/line1.png" alt="line1">
+                <img src="./images/moving_banner/line3.png" alt="line3">
+            </p>
+        </div><!--group-->
+        <div class="t_group2">
+            <p>
+                <img src="./images/moving_banner/line2.png" alt="line2">
+                <img src="./images/moving_banner/line4.png" alt="line4">
+            </p>
+            <p>
+                <img src="./images/moving_banner/line2.png" alt="line2">
+                <img src="./images/moving_banner/line4.png" alt="line4">
+            </p>
+        </div><!--group-->
+    </div><!--moving banner-->
+    <!--왜 줄이면 100% 안 나올까 고민해보기-->
+
+
+
+
+
+    <div id="brand_info">
+        <div class="brand_info_inner">
+            <h1 class="info_brand_logo">
+                <img src="./images/brand_info/logo.png" alt="brand_logo">
+            </h1>
+            <h1 class="r_logo">
+                <img src="./images/brand_info/r_logo.png" alt="rotating _animation">
+            </h1>
+            <h1 class="brand_info_title">
+                Who we are ...
+            </h1>
+
+
+
+
+            <ul class="designers">
+                <li data-aos="fade-up" data-aos-easing="ease-out-back"><img src="./images/brand_info/designer_kim.png"
+                        alt="designer1">
+                    <p class="designer_info">
+                        김도형<br>
+                        Deep Forest 디자이너<br>
+                        <span class="font_size1">"숲이 주는 아름다움을 표현합니다."</span>
+                    </p>
+                    <img src="./images/brand_info/F_designer_plates.png" alt="plates1">
+                </li>
+                <h6 class="clear"></h6>
+                <li data-aos="fade-up" data-aos-easing="ease-out-back" class="r_bg"><img
+                        src="./images/brand_info/O_designer_plates.png" alt="plates2">
+                    <p class="designer_info">
+                        이향미<br>
+                        Under the olive flower 디자이너<br>
+                        <span class="font_size1">"여러분의 식탁에 꽃처럼 틔울.."</span>
+                    </p>
+                    <img src="./images/brand_info/designer_Lee.png" alt="designer2">
+                </li>
+                <h6 class="clear"></h6>
+                <li data-aos="fade-up" data-aos-easing="ease-out-back" class="margin-bottom"><img
+                        src="./images/brand_info/designer_Han.png" alt="designer3">
+                    <p class="designer_info">
+                        한세현<br>
+                        Starry Night 디자이너<br>
+                        <span class="font_size1">"당신을 위로하던 밤하늘을 드려요."</span>
+                    </p>
+                    <img src="./images/brand_info/S_designer_plates.png" alt="plates3">
+                </li>
+                <h6 class="clear"></h6>
+            </ul>
+
+
+
+
+            <div class="brand_vision">
+                <div class="swiper3">
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/brand_info/b_vision1.png" alt="vision1"></div>
+                            <div class="swiper-slide"><img src="./images/brand_info/b_vision2.png" alt="vision2"></div>
+                            <div class="swiper-slide"><img src="./images/brand_info/b_vision3.png" alt="vision3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper(".mySwiper3", {
+                            spaceBetween: 0,
+                            centeredSlides: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            loop: true,
+                            speed: 2000,
+                        });
+                    </script>
+                </div><!--swiper3-->
+                <!--Swiper_vision-->
+                <div class="t_vision">
+                    <h1 class="vision_title">
+                        What are we gonna<br>be like?
+                    </h1>
+                    <p>
+                        <a href="#" class="b_direct_menu">브랜드 소개 바로가기</a>
+                    </p>
+                </div><!--t_vision-->
+            </div><!--brand vision-->
+            <ul class="pg_direct_menu">
+                <li>
+                    <p class="menu_name">브랜드 소개</p>
+                    <p class="img"><img src="./images/brand_info/Blogo_direct_menu.png" alt="D_menu_logo"></p>
+                    <p class="d_btn"><a href="#">바로가기</a></p>
+                </li>
+                <li>
+                    <p class="menu_name">상품 둘러보기</p>
+                    <p class="img img_size1"><img src="./images/brand_info/S_direct_menu.png" alt="D_shoppping"></p>
+                    <p class="d_btn"><a href="#">바로가기</a></p>
+                </li>
+                <li>
+                    <p class="menu_name">오프라인 매장 안내</p>
+                    <p class="img img_size2"><img src="./images/brand_info/M_direct_menu.png" alt="D_map"></p>
+                    <p class="d_btn"><a href="#">바로가기</a></p>
+                </li>
+                <li>
+                    <p class="menu_name">수익 기부현황</p>
+                    <p class="img img_size2"><img src="./images/brand_info/D_direct_menu.png" alt="D_map"></p>
+                    <p class="d_btn"><a href="#">바로가기</a></p>
+                </li>
+            </ul>
+        </div><!--brand_info_inner-->
+    </div><!--brand_info-->
+
+    <div id="event">
+        <h1>Event</h1>
+        <ol class="poster">
+            <li><img src="./images/event/poster1.png" alt="아티스트 모집 포스터">
+                <p class="e_hover h_size">
+                    <a href="#">
+                        Sempre Juntos 아티스트 공고<br>
+                        <span>Ceia의 새로운 시리즈 Sempre...</span>
+                    </a>
+                </p>
+            </li>
+            <li><img src="./images/event/poster2.png" alt="Ceia 브랜드 퀴즈">
+                <p class="e_hover">
+                    <a href="#">
+                        Ceia 브랜드 퀴즈!<br>
+                        <span>Ceia 브랜드 퀴즈를 맞추고... </span>
+                    </a>
+                </p>
+            </li>
+            <li><img src="./images/event/poster3.png" alt="플레이팅 콘테스트 포스터">
+                <p class="e_hover">
+                    <a href="#">
+                        Ceia와 함께하는 ‘최고의 만찬’<br>
+                        <span>Ceia 제품과 함께한 최고의 만찬...</span>
+                    </a>
+                </p>
+            </li>
+        </ol>
+    </div><!--event-->
+    <div id="footer">
+        <div class="footer_inner">
+            <div class="f_logo"><img src="./images/footer/footer_logo.png" alt="footer_logo"></div><!--f-logo-->
+            <div class="f_text">
+                <ol class="footer_policy">
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ol>
+                <ol class="footer_info">
+                    <li>회사명: Ceia</li>
+                    <li class="border">대표자명: 이가연</li>
+                    <li>대표전화: 1588-0101</li>
+                </ol>
+                <p class="address">주소: 부산광역시 부산진구 황령대로 505</p>
+                <p class="copy_right">COPYRIGHT © CEIA ALL RIGHTS RESERVED.</p>
+            </div><!--text-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
