@@ -86,12 +86,12 @@ body {
 }
 
 .video_b_inner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
 }
 
 .recommendation_inner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     font-family: 'Abhaya Libre';
     font-size: 21px;
@@ -400,7 +400,7 @@ body {
 }
 
 .brand_info_inner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     position: relative;
 }
@@ -483,7 +483,7 @@ body {
 .brand_vision {
     display: flex;
     background-color: #cfdcd1;
-    width: 1300px;
+    width: 1320px;
     height: 890px;
     justify-content: space-around;
     padding-top: 100px;
@@ -626,7 +626,7 @@ body {
 }
 
 .footer_inner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     position: relative;
 }

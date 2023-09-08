@@ -95,7 +95,7 @@ body {
 
 
 #designer_guide {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .d_intro {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     display: flex;
     padding-top: 150px;
@@ -146,6 +146,10 @@ body {
 
 .designer_g_inner .d_icon {
     animation: move1 1.5s linear infinite;
+}
+
+.d_icon {
+    padding-top: 20px;
 }
 
 .d_text {
@@ -197,7 +201,7 @@ body {
 }
 
 .c_interview_inner {
-    width: 1300px;
+    width: 1320px;
     height: 3000px;
     margin: 0 auto;
     background-color: rgba(238, 236, 204, 0.2);
@@ -311,11 +315,11 @@ span {
 
 
 #more_option {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    padding: 300px 0 400px;
+    padding: 300px 0 300px;
 }
 
 .opt1 {
@@ -426,9 +430,9 @@ span {
 
 
 #video {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
 

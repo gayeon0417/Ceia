@@ -92,14 +92,31 @@ body {
 /*Brand Introduction Start*/
 
 #brand_appeal {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
+@keyframes move1 {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
 .plate_img {
     padding: 300px 20px 200px;
+    animation: move1 2s linear infinite;
 }
 
 .brief_text {
@@ -116,7 +133,7 @@ body {
 }
 
 #designers {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -157,7 +174,7 @@ body {
 }
 
 #logo_guide {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -178,11 +195,27 @@ body {
 .flower {
     width: 180px;
     height: 180px;
-    background-color: cornflowerblue;
     position: absolute;
     top: 250px;
     left: 120px;
 }
+
+.b_name {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 310px;
+    left: 300px;
+}
+
+.slogan_circled {
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 525px;
+    left: 215px;
+}
+
 
 .indicator1 {
     position: absolute;
@@ -206,9 +239,34 @@ body {
     display: flex;
 }
 
+.logo_text {
+    height: 700px;
+    width: 590px;
+    position: relative;
+}
+
+.hover_ani1 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.hover_ani2 {
+    position: absolute;
+    top: 270px;
+    left: 0;
+}
+
+.hover_ani3 {
+    position: absolute;
+    top: 460px;
+    left: 0;
+}
+
 .logo_text li {
     background-color: rgba(249, 248, 237, 0.8);
-    margin: 40px 20px;
+    width: 505px;
+    margin: 0 20px;
     padding: 20px;
     border-radius: 20px;
     font-size: 20px;
@@ -225,7 +283,7 @@ body {
 }
 
 #video {
-    width: 1300px;
+    width: 1320px;
     margin: 200px auto;
 }
 
@@ -246,8 +304,13 @@ body {
     padding-bottom: 150px;
 }
 
+
+.donation_banner img {
+    width: 100%;
+}
+
 .donation_story_innner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
 }
 
@@ -262,7 +325,7 @@ body {
 .d_btn1 {
     background: url(../images/sub_page4/ledger_bg.jpg) no-repeat center left;
     height: 400px;
-    width: 800px;
+    width: 900px;
     margin-top: 200px;
     text-align: left;
 }
@@ -288,14 +351,20 @@ body {
 }
 
 .d_btn2 {
-    background: url(../images/sub_page4/donation_institution_bg.jpg) no-repeat center right;
-    height: 400px;
+    width: 1320px;
     margin: 100px 0;
     text-align: right;
 }
 
-.d_btn2:hover {
-    background-size: 120%;
+.d_btn2_inner {
+    background: url(../images/sub_page4/donation_institution_bg.jpg) no-repeat center right;
+    width: 900px;
+    height: 400px;
+    margin-left: auto;
+}
+
+.d_btn2:hover .d_btn2_inner {
+    background-size: 150%;
 }
 
 .d_btn2 a {
@@ -348,7 +417,7 @@ body {
 }
 
 .footer_inner {
-    width: 1300px;
+    width: 1320px;
     margin: 0 auto;
     position: relative;
 }

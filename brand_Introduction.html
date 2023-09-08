@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="./images/favicon/Asset 7.png" type="image/x-icon">
     <link rel="stylesheet" href="./fonts/English fonts/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Korean fonts/stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/hover.js"></script>
     <link rel="stylesheet" href="./css/brand_introduction.css">
     <title>Ceia Brand Introduction</title>
 </head>
@@ -19,11 +23,11 @@
             <p class="top_inner_img"><a href="#"><img src="./images/header/(top)wishlist.png" alt="개인정보"></a></p>
         </div><!--top_inner-->
         <div id="header">
-            <p class="h_menu"><a href="#">Brand Introduction</a></p>
-            <p class="h_menu"><a href="#">Product</a></p>
-            <p class="h_logo"><a href="#"><img src="./images/header/H_logo.png" alt="메인페이지 바로가기"></p></a>
-            <p class="h_menu"><a href="#">Event</a></p>
-            <p class="h_menu"><a href="#">Collaboration</a></p>
+            <p class="h_menu"><a href="./brand_Introduction.html">Brand Introduction</a></p>
+            <p class="h_menu"><a href="./product1.html">Product</a></p>
+            <p class="h_logo"><a href="./index.html"><img src="./images/header/H_logo.png" alt="메인페이지 바로가기"></p></a>
+            <p class="h_menu"><a href="./event.html">Event</a></p>
+            <p class="h_menu"><a href="./collaboration.html">Collaboration</a></p>
         </div><!--herder-->
     </div><!--top-->
 
@@ -53,7 +57,11 @@
             <i>Desiners</i>
             <!--배경 색, 이탤릭, 섹션 제목 3개 공통 스타일 주기-->
         </p>
-        <ul class="d_pic_flex">
+
+        <!--<p class="right" data-aos="fade-up" data-aos-easing="ease-out-back">data-aos="fade-up"</p>-->
+
+
+        <ul class="d_pic_flex" data-aos="fade-up" data-aos-easing="ease-out-back">
             <li><img src="./images/sub_page4/d_kim.png" alt="Kim">
                 <p class="names">
                     <i>Line. Deep Fores</i>t<br>
@@ -73,7 +81,7 @@
                 </p><!--names, border radius 값 삽입-->
             </li><!--3개 복제-->
         </ul><!--d_pic_flex-->
-        <p class="designers_text">
+        <p class="designers_text" data-aos="fade-up" data-aos-easing="ease-out-back">
             Ceia(세이아)의 디자이너들은, <b>브랜드내 공모 이벤트</b>를 통해 오로지 실력으로만 선정된 <b>신진 작가</b>들입니다.<br>
             기업의 사회적 가치의 중요성이 대두되는 현재에 맞게, 보다 많은 이들에게<br>
             기회를 제공하고 지역사회에 공헌하기 위해 <b>인재 발굴 및 지원</b>에 힘쓰고 있습니다.
@@ -87,7 +95,7 @@
             <i>Logo Guide</i>
             <!--배경 색, 이탤릭, 섹션 제목 3개 공통 스타일 주기-->
         </p>
-        <div class="logo_guide_inner">
+        <div class="logo_guide_inner" data-aos="fade-up" data-aos-easing="ease-out-back">
             <!-- flex, *position(포지션을 써서 호버하면 나오게 할지 고민입니다! 전체 박스에 삽입될 것은 아님.)-->
             <div class="logo_img">
                 <!--indicator는 position으로 삽입-->
@@ -100,19 +108,22 @@
                 <p class="slogan_circled"></p>
                 <!--2개 더 복사해서 만들기-->
             </div><!--logo_img-->
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            <script src="./js/jquery-3.7.0.min.js"></script>
             <ul class="logo_text">
                 <!--hightlight 효과 span 태그에 배경효과, li태그에 border radius 값 주기-->
 
-                <li class="f_textbox">세이아를 만나는 모든 분들에게 <span class="highlight">평화</span>
+                <li class="f_textbox hover_ani1">세이아를 만나는 모든 분들에게 <span class="highlight">평화</span>
                     가 있길 바라는 마음을<br>
                     올리브 꽃의 심볼에 담아 표현하였습니다.<br>
                     <span class="highlight">‘올리브 꽃’</span> 꽃말은 평화, 풍요, 영광.
                 </li>
-                <li>포르투갈어로 <span class="highlight">‘만찬’</span>이라는 뜻을 가진 &<span
+                <li class="hover_ani2">포르투갈어로 <span class="highlight">‘만찬’</span>이라는 뜻을 가진 <span
                         class="highlight">&lt;Ceia(세이아)&gt;</span>는,<br>
                     &lt;Ceia(세이아)&gt;와 함께 차려지는 식탁마다 만찬과 같은 식사가<br>
                     될 수 있도록 하겠다는 포부를 담았습니다. </li>
-                <li>
+                <li class="hover_ani3">
                     “Esperamos nos fazermos sua ceia cheia por seus<br>
                     dias especiais.” 라는 문구는 &lt;Ceia(세이아)&gt;가 전달하고자<br>
                     하는 <span class="highlight">브랜드 가치</span>를 담은 것입니다.<br>
@@ -145,11 +156,11 @@
                 깃들길 바라는 마음으로,<br>
                 <span class="highlight">Ceia(세이아)</span>는 항상 발전하겠습니다.
             </p>
-            <div class="d_btn1">
+            <div class="d_btn1" data-aos="fade-up" data-aos-easing="ease-out-back">
                 <!--배경 넣기/ 버튼은 a태그 포지션/ 배경 호버하면 커지고, 버튼은 호버하면 하얗게!-->
                 <a href="#">수익 기부 현황 및 장부 공개</a>
             </div><!--d_btn1-->
-            <div class="d_btn2">
+            <div class="d_btn2" data-aos="fade-up" data-aos-easing="ease-out-back">
                 <div class="d_btn2_inner">
                     <a href="#">기부처 안내</a>
                 </div><!--d_btn2_inner-->
@@ -189,6 +200,10 @@
             </div><!--text-->
         </div><!--footer_inner-->
     </div><!--footer-->
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
