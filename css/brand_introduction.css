@@ -26,8 +26,8 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #131E15;
-    min-width: 1450px;
-    background-color: #111211;
+    min-width: 1500px;
+    background-color: #131e15;
 }
 
 #top {
@@ -196,8 +196,13 @@ body {
     width: 180px;
     height: 180px;
     position: absolute;
-    top: 250px;
-    left: 120px;
+    top: 170px;
+    left: -520px;
+    opacity: 0.5;
+}
+
+.flower:hover {
+    opacity: 1;
 }
 
 .b_name {
@@ -412,7 +417,7 @@ body {
     margin-top: 80px;
     display: flex;
     justify-content: space-around;
-    background: url(../images/sub_page4/f_bg.png) no-repeat center;
+    background: url(../images/footer/footer_bg.png) no-repeat center;
     height: 303px;
 }
 
@@ -472,4 +477,33 @@ body {
     font-family: 'Abhaya Libre';
     font-weight: bold;
     color: #005e20;
+}
+
+
+.top_menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #eeeccc;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.top_menu a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #131E15;
+    font-family: 'Abhaya Libre';
+    font-size: 18px;
+}
+
+.top_menu:hover {
+    background-color: #F9F8ED;
+    transition: 0.5s;
+}
+
+.top_menu:hover a {
+    color: #131E15;
 }

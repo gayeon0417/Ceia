@@ -26,7 +26,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #131E15;
-    min-width: 1450px;
+    min-width: 1500px;
     background-color: #2a3938;
 }
 
@@ -198,6 +198,7 @@ body {
     background: url(../images/sub_page3/interview_bg.jpg) no-repeat top center;
     height: 3000px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .c_interview_inner {
@@ -239,7 +240,6 @@ body {
     line-height: 35px;
 }
 
-/*보수중*/
 .text_box2 {
     background: url(../images/sub_page3/text_bg2.png) no-repeat center left;
     text-align: left;
@@ -437,6 +437,14 @@ span {
 
 
 
+
+
+
+
+
+
+
+
 /*collaboration 끝*/
 
 
@@ -511,7 +519,70 @@ span {
     font-family: 'Abhaya Libre';
     font-weight: bold;
     padding: 0 65px;
-    font-family: 'Abhaya Libre';
+
     font-weight: bold;
     color: #194d23;
+}
+
+.top_menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #222d2c;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.top_menu a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #eeeccc;
+    font-family: 'Abhaya Libre';
+    font-size: 18px;
+}
+
+.top_menu:hover {
+    background-color: #F9F8ED;
+    transition: 0.5s;
+}
+
+.top_menu:hover a {
+    color: #131E15;
+}
+
+.designer_remocontroler {
+    width: 145px;
+    height: 165px;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #F9F8ED;
+    position: fixed;
+    top: 300px;
+    left: 0;
+
+}
+
+.designer_remocontroler li {
+    border-radius: 5px;
+    font-family: 'Abhaya Libre';
+    font-weight: 550;
+    width: 130px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.designer_remocontroler li a {
+    color: #2a3938;
+}
+
+.designer_remocontroler li:hover {
+    background-color: rgba(150, 178, 155, 0.5);
+    transition: 0.5s;
 }

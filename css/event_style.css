@@ -26,7 +26,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #131E15;
-    min-width: 1450px;
+    min-width: 1500px;
     background-color: #131E15;
 }
 
@@ -80,9 +80,14 @@ body {
 
 
 /*event 코드 시작*/
+
 #events {
-    max-width: 1700px;
+    width: 1500px;
     margin: 0 auto;
+}
+
+#events img {
+    max-width: 100%;
 }
 
 #video_banner {
@@ -163,7 +168,19 @@ body {
 .upcomming li,
 .our_memory li {
     width: 30%;
-    padding: 0 30px;
+
+}
+
+.ongoing {
+    justify-content: space-around;
+}
+
+.upcomming {
+    justify-content: space-around;
+}
+
+.our_memory {
+    justify-content: space-around;
 }
 
 li:hover img {
@@ -237,4 +254,33 @@ li:hover img {
     font-family: 'Abhaya Libre';
     font-weight: bold;
     color: #194d23;
+}
+
+
+.top_menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #eeeccc;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.top_menu a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #131E15;
+    font-family: 'Abhaya Libre';
+    font-size: 18px;
+}
+
+.top_menu:hover {
+    background-color: #F9F8ED;
+    transition: 0.5s;
+}
+
+.top_menu:hover a {
+    color: #131E15;
 }

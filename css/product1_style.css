@@ -26,7 +26,7 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #131E15;
-    min-width: 1450px;
+    min-width: 1500px;
     background-color: #2a3938;
     /* 어떤 기기에서든 1450px 크기로 보여준다는 의미! - 반응형이 아니니까~*/
 }
@@ -77,12 +77,16 @@ body {
 }
 
 .h_menu:hover {
-
     background: url(../images/header/header_hover.png) no-repeat center;
 }
 
 .swiper1 {
     padding-top: 250px;
+    width: 100%;
+}
+
+.swiper1 img {
+    width: 100%;
 }
 
 .mySwiper .swiper-pagination-bullet {
@@ -113,6 +117,12 @@ body {
 
 .line_names li:hover {
     background: url(../images/sub_page/hover_line_direction.png) no-repeat center;
+}
+
+.like {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 #products_deep_forest {
@@ -300,4 +310,32 @@ body {
     font-family: 'Abhaya Libre';
     font-weight: bold;
     color: #194d23;
+}
+
+.top_menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #222d2c;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.top_menu a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #eeeccc;
+    font-family: 'Abhaya Libre';
+    font-size: 18px;
+}
+
+.top_menu:hover {
+    background-color: #F9F8ED;
+    transition: 0.5s;
+}
+
+.top_menu:hover a {
+    color: #131E15;
 }
