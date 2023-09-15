@@ -198,12 +198,9 @@ body {
     position: absolute;
     top: 170px;
     left: -520px;
-    opacity: 0.5;
 }
 
-.flower:hover {
-    opacity: 1;
-}
+/*호버하면 li 투명도 바뀌게 하는 법 여쭈어 보기*/
 
 .b_name {
     width: 180px;

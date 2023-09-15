@@ -119,11 +119,18 @@ body {
     background: url(../images/sub_page/hover_line_direction.png) no-repeat center;
 }
 
+/*
 .like {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 100px;
+    right: 15px;
 }
+
+.like_clicked {
+    position: absolute;
+    bottom: 110px;
+    right: 18px;
+}*/
 
 #products_deep_forest {
     width: 1320px;
