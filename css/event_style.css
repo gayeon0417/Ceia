@@ -98,8 +98,6 @@ body {
     width: 100%;
 }
 
-/*얘는 1920에 1080인데 너비부분에 스크롤바가 생기는 건 세로 스크롤바 자리 때문일까요..?
-너비를 어떻게 줄여야 할까요?*/
 
 
 #moving_banner {
@@ -157,7 +155,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     height: 80px;
-    margin: 300px 0 100px;
+    margin: 200px 0 100px;
 }
 
 .writing {
@@ -175,6 +173,10 @@ body {
     justify-content: space-around;
 }
 
+.ongoing>li {
+    cursor: pointer;
+}
+
 .upcomming {
     justify-content: space-around;
 }
@@ -186,6 +188,22 @@ body {
 li:hover img {
     display: inline-block;
     box-shadow: 0 0 20px #F9F8ED;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: none;
+}
+
+.close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 /*event 코드 끝*/

@@ -134,7 +134,7 @@ body {
 
 #designers {
     width: 1320px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .section_title {
@@ -175,7 +175,7 @@ body {
 
 #logo_guide {
     width: 1320px;
-    margin: 0 auto;
+    margin: 200px auto;
 }
 
 
@@ -196,8 +196,8 @@ body {
     width: 180px;
     height: 180px;
     position: absolute;
-    top: 170px;
-    left: -520px;
+    top: 257px;
+    left: 115px;
 }
 
 /*호버하면 li 투명도 바뀌게 하는 법 여쭈어 보기*/
@@ -221,20 +221,20 @@ body {
 
 .indicator1 {
     position: absolute;
-    top: 48px;
-    left: 150px;
+    top: 56px;
+    left: -435px;
 }
 
 .indicator3 {
     position: absolute;
-    top: 170px;
-    left: 286px;
+    top: -167px;
+    left: -299px;
 }
 
 .indicator2 {
     position: absolute;
-    bottom: 133px;
-    left: 243px;
+    bottom: -161px;
+    left: -343px;
 }
 
 .logo_guide_inner {
@@ -273,6 +273,8 @@ body {
     border-radius: 20px;
     font-size: 20px;
     line-height: 30px;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .logo_text .f_textbox {
@@ -286,7 +288,7 @@ body {
 
 #video {
     width: 1320px;
-    margin: 200px auto;
+    margin: 300px auto;
 }
 
 .section_title2 {
@@ -303,7 +305,7 @@ body {
 }
 
 .donation_banner {
-    padding-bottom: 150px;
+    padding-bottom: 250px;
 }
 
 
@@ -328,7 +330,7 @@ body {
     background: url(../images/sub_page4/ledger_bg.jpg) no-repeat center left;
     height: 400px;
     width: 900px;
-    margin-top: 200px;
+    margin-top: 250px;
     text-align: left;
 }
 
@@ -354,7 +356,7 @@ body {
 
 .d_btn2 {
     width: 1320px;
-    margin: 100px 0;
+    margin: 100px 0 200px;
     text-align: right;
 }
 
