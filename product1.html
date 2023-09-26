@@ -85,8 +85,7 @@
                 <p class="price"><a href="#">Tree stem patterned plate
                         <br>L / White<br>￦ 28,000
                     </a></p>
-                <!--<p class="like"></a><img src="./images/sub_page/like_btn.png" alt="like"></p>
-                <p class="like_clicked"></a><img src="./images/sub_page/like_clicked.png" alt="like"></p>-->
+                <img class="like" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/New_item2.png" alt="item2" class="position3 hover1">
@@ -94,12 +93,14 @@
                 <p class="price"><a href="#">Down-view patterned bowl
                         <br>L / White<br>￦ 23,000
                     </a></p>
+                <img class="like" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/New_item3.png" alt="item3" class="position4 hover1">
                     <img src="./images/sub_page/T_new.png" alt="new_tag" class="position2"></a>
                 <p class="price"><a href="#">Simple black wooden cutlery
                         <br>￦ 13,000</a></p>
+                <img class="like" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/best_lake1.png" alt="item1" class="position5 hover1">
@@ -109,6 +110,7 @@
                         <br>Black/ L
                         <br>￦ 28,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/best_lake2.png" alt="item2" class="position6 hover1">
@@ -118,6 +120,7 @@
                         <br>Black/ L
                         <br>￦ 23,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/best_lake3.png" alt="item3" class="position7 hover1">
@@ -126,6 +129,7 @@
                         <br>Soup pot
                         <br>Black/ L
                         <br>￦ 36,000</p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><img src="./images/sub_page/Best_mark.png" alt="Best"></li>
             <!--일반-->
@@ -136,6 +140,7 @@
                         <br>Black/ L
                         <br>￦ 28,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/basic_item2.png" alt="item2" class="position9 hover1"></a>
@@ -144,6 +149,7 @@
                         <br>Black/ L
                         <br>￦ 23,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/basic_item3.png" alt="item3" class="position10 hover1"></a>
@@ -151,6 +157,7 @@
                         <br>Soup pot
                         <br>Black/ L
                         <br>￦ 36,000</p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/basic_item4.png" alt="item4" class="position11 hover1"></a>
@@ -159,6 +166,7 @@
                         <br>Black/ L
                         <br>￦ 28,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/basic_item5.png" alt="item5" class="position12 hover1"></a>
@@ -167,6 +175,7 @@
                         <br>Black/ L
                         <br>￦ 23,000
                     </a></p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
             <li><a href="#"><img src="./images/sub_page/products_bg.png" alt="product_bg">
                     <img src="./images/sub_page/basic_item6.png" alt="item6" class="position13 hover1"></a>
@@ -174,6 +183,7 @@
                         <br>Soup pot
                         <br>Black/ L
                         <br>￦ 36,000</p>
+                <img class="like like2" src="./images/sub_page/like_btn.png" alt="like">
             </li>
         </ol>
     </div><!--products_deep_forest-->
@@ -201,6 +211,20 @@
     <div class="top_menu">
         <a href="#">Top</a>
     </div><!--top_menu-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            //이미지 변경 함수 호출
+
+            $(".like").click(function () {
+                $(this).attr("src", "./images/sub_page/like_clicked.png");//변경될 이미지 주소를 넣어주세요
+            });
+            $(".like").dblclick(function () {
+                $(this).attr("src", "./images/sub_page/like_btn.png");//변경될 이미지 주소를 넣어주세요
+            });
+        });
+    </script>
 </body>
 
 </html>
